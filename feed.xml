@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2013-11-09T15:00:00Z</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Hello world</title>
+    <link rel="alternate" href="http://blog.url.com/2013/11/10/hello-world.html"/>
+    <id>http://blog.url.com/2013/11/10/hello-world.html</id>
+    <published>2013-11-09T15:00:00Z</published>
+    <updated>2013-11-14T10:14:14+00:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;技術関係の小ネタを書くために新しくブログを作った。&lt;/p&gt;
+
+&lt;h2 id="section"&gt;ブログどれ使うか問題&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://tumblr.com"&gt;tumblr&lt;/a&gt;、
+&lt;a href="https://medium.com/"&gt;medium&lt;/a&gt;、
+&lt;a href="http://hatenablog.com"&gt;hatenablog&lt;/a&gt;、
+&lt;a href="http://scriptogr.am"&gt;scriptogr.am&lt;/a&gt; などを検討した後、
+今回は&lt;a href="http://middlemanapp.com/"&gt;Middleman&lt;/a&gt;とGitHub Pagesを利用することにした。
+tumblrは、手軽に使えて、無料で広告が出ず、HTMLテンプレートは全て自分で編集できるが、記事編集画面が少し使いづらい。
+mediumはオシャレだけど、表参道みたいな息苦しさがある。
+はてなブログは、はてなスターや通知、編集画面が便利で最高だけど、
+無料だと広告が出るし、HTMLテンプレート全体を自由に編集できない。
+scriptogr.amはDropboxに記事を置くと公開されるという仕組みが面白いけれど、まだBeta版品質という感じがする。&lt;/p&gt;
+
+&lt;h2 id="middleman"&gt;Middlemanについて&lt;/h2&gt;
+&lt;p&gt;MiddlemanはWebサイトに必要な静的ファイルを生成するためのツールで、
+SassやMarkdown等のテンプレートを元に、HTMLやCSS、Javascriptといったファイルを生成してくれる。
+Middlemanは初期設定と学習に少し手間が掛かるけど、数時間程度だし、結局自分が好きなように設定出来るのが良い。
+データが全て手元にあるということに安心感がある。静的ファイルを返すだけなので応答速度は速い。
+手元で確認するためのWebサーバが同梱されていて、Live-Relaod機能も付いているので非常に便利。
+Previewボタンをポチポチ押して確認しなくて良い。
+使う前に想像していたほど大きなシステムでは無かった。
+Webアプリでも部分的に静的ファイルに置き換えられる箇所は多いので、そういう場面で簡単に適用出来ると良いかもしれない。&lt;/p&gt;
+
+&lt;h2 id="section-1"&gt;公開作業の単純化&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="" src="/images/2013-11-10-hello-world/build-pipeline.png" /&gt;
+ブログは書きたいときにすぐ書けるようにしておかないと途端に腐るので、
+GitHubとTravisCIとDropboxを使って、エディタで記事を書いてフォルダに入れるだけで公開されるようにした。
+GitHubでは、username.github.ioレポジトリのmasterブランチにファイルを置くと、
+http://username.github.io からファイルを配信してくれる。
+Markdownで書いた記事をMiddlemanでHTMLに変換し、これをmasterブランチにpushする。
+Middlemanにはブログを作るための拡張機能があるので、これを使えば簡単に雛形を生成できる。
+静的ファイルの生成を自分で行うのは面倒なので、これはTravis-CIに任せる。
+GitHubのPersonal Access Tokenを利用すれば、Travis-CIからGitHubにpushできる。
+不具合があってbuildにfailするとTravisがメールを投げてくれるので、所謂一般的なCIの役割も兼ねていて便利。
+記事編集のたびにGitHubにPushするのも面倒なので、レポジトリをDropbox内に置き、
+VPSで動かしているプログラムにDropboxを監視させ、代わりにGitHubにPushさせている。
+この辺VPSとか使わずにもう少し便利な仕組みがあると良いと思う。
+このブログのソースコードは&lt;a href="https://github.com/r7kamura/r7kamura.github.io/"&gt;ここ&lt;/a&gt;に置いてある。&lt;/p&gt;
+</content>
+  </entry>
+</feed>

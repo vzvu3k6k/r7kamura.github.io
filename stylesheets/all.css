@@ -1,0 +1,153 @@
+/* line 9, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+body {
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Avenir Next', 'Hiragino Kaku Gothic ProN', Meiryo, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #F3F1E8;
+  color: #333; }
+
+/* line 15, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+a {
+  color: inherit; }
+
+/* line 19, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+table {
+  width: 100%; }
+
+/* line 24, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+h1,
+h2 {
+  margin: 0; }
+
+/* line 28, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.header-image {
+  float: left; }
+
+/* line 32, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.header-image-element {
+  border-radius: 50px; }
+
+/* line 36, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.header-inner {
+  padding: 60px;
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+/* line 41, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.header-text {
+  float: left;
+  padding: 30px 20px; }
+
+/* line 46, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.header-text-title {
+  line-height: 1;
+  margin: 0; }
+
+/* line 51, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.header-text-description {
+  margin: 0; }
+
+/* line 55, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-inner {
+  padding: 60px;
+  width: 800px;
+  margin: 0 auto; }
+
+/* line 59, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-inner-single-article {
+  background: white; }
+
+/* line 63, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-articles-element-table {
+  width: 100%; }
+
+/* line 67, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-articles-element-year {
+  background: #e2d4d4; }
+
+/* line 71, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-articles-element-month {
+  background: #e4d7d7; }
+
+/* line 75, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-articles-element-day {
+  background: #e9dddd; }
+
+/* line 79, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-articles-element-title {
+  background: #ebe0e0;
+  padding-left: 20px; }
+
+/* line 87, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-articles-element-day,
+.main-articles-element-month,
+.main-articles-element-year,
+.main-articles-element-title {
+  padding: 20px 10px;
+  color: #5c3d3d; }
+  /* line 91, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+  .main-articles-element:hover .main-articles-element-day, .main-articles-element:hover
+  .main-articles-element-month, .main-articles-element:hover
+  .main-articles-element-year, .main-articles-element:hover
+  .main-articles-element-title {
+    background: #d6c2c2; }
+
+/* line 98, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-articles-element-day,
+.main-articles-element-month,
+.main-articles-element-year {
+  width: 40px;
+  text-align: center; }
+
+/* line 103, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-article-header {
+  margin-bottom: 4em; }
+
+/* line 107, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-article-header-title {
+  text-align: center; }
+
+/* line 111, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-article-header-date {
+  text-align: center; }
+
+/* line 115, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-article {
+  line-height: 1.9em; }
+
+/* line 119, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-article h2 {
+  margin: 2em 0 0;
+  font-size: 1.2em;
+  line-height: 2; }
+
+/* line 125, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-article p {
+  margin: 0; }
+
+/* line 129, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-article p + p {
+  margin: 2em 0; }
+
+/* line 133, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.main-article img {
+  max-width: 100%; }
+
+/* line 137, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.footer-inner {
+  padding: 60px;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center; }
+
+/* line 142, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.footer a {
+  text-decoration: none; }
+
+/* line 147, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.footer-powers,
+.footer-copyright {
+  margin: 0; }
+
+/* line 151, /home/travis/build/r7kamura/r7kamura.github.io/source/stylesheets/all.scss */
+.footer-powers {
+  font-size: 80%; }
